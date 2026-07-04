@@ -1,0 +1,27 @@
+{
+  "name": "ai-practice",
+  "version": "1.0.0",
+  "description": "practicing with some ai stuuf",
+  "keywords": [
+    "ollama"
+  ],
+  "homepage": "https://github.com/vivacenontroppo/ai-practice#readme",
+  "bugs": {
+    "url": "https://github.com/vivacenontroppo/ai-practice/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivacenontroppo/ai-practice.git"
+  },
+  "license": "ISC",
+  "author": "Marian Kucharski",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "axios": "^1.18.1",
+    "playwright": "^1.61.1"
+  }
+}
