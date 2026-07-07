@@ -20,4 +20,6 @@ Local AI autocomplete experiments. A few local models were tested, and the proje
 
 And it works remarkably well.
 
-[Qwen2.5 autocomplete demo](qwen2.5%20autocomplite.mov)
+<video width="600" height="440" controls>
+  <source src="qwen2.5%20autocomplite.mov" type="video/mp4">
+</video>
