@@ -1,27 +1,20 @@
 {
-  "name": "ai-practice",
+  "name": "ai-practice-e2e",
   "version": "1.0.0",
-  "description": "practicing with some ai stuuf",
-  "keywords": [
-    "ollama"
-  ],
-  "homepage": "https://github.com/vivacenontroppo/ai-practice#readme",
-  "bugs": {
-    "url": "https://github.com/vivacenontroppo/ai-practice/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vivacenontroppo/ai-practice.git"
-  },
-  "license": "ISC",
-  "author": "Marian Kucharski",
+  "description": "Playwright end-to-end test automation project with TypeScript and Page Object Model.",
+  "private": true,
   "type": "module",
-  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "axios": "^1.18.1",
-    "playwright": "^1.61.1"
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.0",
+    "typescript": "^5.9.3"
   }
 }
