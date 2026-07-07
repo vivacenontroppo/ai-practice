@@ -9,8 +9,8 @@ export class MainPage extends BasePage {
 
   constructor(page: Page) {
     super(page, '/');
-    this.heading = page.getByRole('heading', { level: 1 });
-    this.navigation = page.getByRole('navigation');
+    this.heading = page.locator('xpath=//*[@role="banner"]//h1 | //header//h1');
+    this.navigation = page.locator('xpath=//nav[contains(@class, "navbar")]');
     this.search = new SearchComponent(page);
   }
 

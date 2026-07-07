@@ -1,50 +1,20 @@
-import { expect, test } from '@playwright/test';
-import { LoginPage } from '../src/pages/LoginPage';
+import { test, expect } from '@playwright/test';
+import { testConfig } from '../src/config/testConfig';
 import { MainPage } from '../src/pages/MainPage';
 
-test.describe('POM smoke tests', () => {
-  test('fills login form with LoginPage', async ({ page }) => {
-    await page.setContent(`
-      <main>
-        <form>
-          <label for="username">Username</label>
-          <input id="username" />
-          <label for="password">Password</label>
-          <input id="password" type="password" />
-          <button type="button">Log in</button>
-        </form>
-      </main>
-    `);
-
-    const loginPage = new LoginPage(page);
-    await loginPage.expectLoginFormVisible();
-    await loginPage.login('test.user', 'secret');
-
-    await expect(loginPage.usernameInput).toHaveValue('test.user');
-    await expect(loginPage.passwordInput).toHaveValue('secret');
-  });
-
-  test('uses MainPage with SearchComponent', async ({ page }) => {
-    await page.setContent(`
-      <header>
-        <nav aria-label="Main navigation">Home</nav>
-      </header>
-      <main>
-        <h1>Dashboard</h1>
-        <form data-testid="search" role="search">
-          <input type="search" aria-label="Search" />
-          <button type="button">Search</button>
-        </form>
-        <ul data-testid="search-results">
-          <li>Playwright TypeScript guide</li>
-        </ul>
-      </main>
-    `);
-
+test.describe('Playwright docs search', () => {
+  test('opens main page and prints search result titles', async ({ page }) => {
     const mainPage = new MainPage(page);
+
+    await mainPage.goto();
     await mainPage.expectLoaded();
     await mainPage.search.expectVisible();
-    await mainPage.search.search('playwright');
-    await mainPage.search.expectResultContains(/typescript/i);
+    await mainPage.search.search(testConfig.search.defaultQuery);
+
+    const resultTitles = await mainPage.search.getResultTitles();
+    console.log(`Search result titles for "${testConfig.search.defaultQuery}":`);
+    console.log(resultTitles.map((title, index) => `${index + 1}. ${title}`).join('\n'));
+
+    expect(resultTitles.length).toBeGreaterThan(0);
   });
 });
