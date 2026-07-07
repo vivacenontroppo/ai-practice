@@ -2,12 +2,22 @@
 
 This project is a small practice space for comparing different AI coding tools and learning how they behave on real automation tasks.
 
-**  1. codex-eg branch:**
-The goal is to keep experiments simple enough to follow, but structured enough to practice clean test design, reusable locators, shared config, readable specs, and useful feedback loops usind Codex.
+The goal is to keep experiments simple enough to follow, but structured enough to notice what each tool does well: clean test design, reusable locators, shared config, readable specs, and useful feedback loops.
 
-**and it works remarkably well.**
+## Branch Notes
 
-**  2. autocomplete branch:**
-tested few local models for AI autocomplition. settled on Qwen2.5 (1.5b).
+### `codex-eg`
 
-**and it works remarkably well.**
+Playwright demo work using Codex. The branch explored a live Playwright page, a Page Object Model structure, a dedicated search component, exported test config, and waits close to the behavior they verify.
+
+And it works remarkably well.
+
+### `autocomplete`
+
+Local AI autocomplete experiments. A few local models were tested, and the project settled on Qwen2.5 1.5B for completion work.
+
+And it works remarkably well.
+
+## Codex Conclusion
+
+![Codex conclusion](codex-conclusion.png)
