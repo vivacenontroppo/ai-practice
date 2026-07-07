@@ -23,3 +23,5 @@ And it works remarkably well.
 <video width="600" height="440" controls>
   <source src="qwen2.5%20autocomplite.mov" type="video/mp4">
 </video>
+
+[Qwen2.5 autocomplete demo](qwen2.5%20autocomplite.mov)
