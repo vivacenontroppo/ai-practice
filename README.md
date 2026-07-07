@@ -2,17 +2,12 @@
 
 This project is a small practice space for comparing different AI coding tools and learning how they behave on real automation tasks.
 
-The goal is to keep experiments simple enough to follow, but structured enough to practice clean test design, reusable locators, shared config, readable specs, and useful feedback loops.
+*codex-eg branch:
+The goal is to keep experiments simple enough to follow, but structured enough to practice clean test design, reusable locators, shared config, readable specs, and useful feedback loops usind Codex.
 
-## Current Focus
+and it works remarkably well.
 
-- Compare how AI tools help with test automation tasks
-- Practice Playwright project structure and Page Object Model patterns
-- Prefer examples that connect to real pages and real behavior
-- Learn what makes prompts, feedback, and code review loops work well
+*autocomplete branch:
+tested few local models for AI autocomplition. settled on Qwen2.5 (1.5b). and it 
 
-## Notes From The Session
-
-This README was inspired by a Playwright demo on the live Playwright site. The useful bits were clear structure, good locators, a dedicated search component, exported config constants, and waits that belong close to the behavior they verify.
-
-Clean handoff, green test, pushed branch.
+works remarkably well.
