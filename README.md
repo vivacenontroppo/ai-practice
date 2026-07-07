@@ -12,7 +12,7 @@ Playwright demo work using Codex. The branch explored a live Playwright page, a 
 
 And it works remarkably well.
 
-<img src="codex-conclusion.png" width="528">
+<img src="codex-conclusion.png" width="300">
 
 ### `autocomplete`
 
