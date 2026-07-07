@@ -12,12 +12,12 @@ Playwright demo work using Codex. The branch explored a live Playwright page, a 
 
 And it works remarkably well.
 
+![Codex conclusion](codex-conclusion.png)
+
 ### `autocomplete`
 
 Local AI autocomplete experiments. A few local models were tested, and the project settled on Qwen2.5 1.5B for completion work.
 
 And it works remarkably well.
 
-## Codex Conclusion
-
-![Codex conclusion](codex-conclusion.png)
+[Qwen2.5 autocomplete demo](qwen2.5%20autocomplite.mov)
