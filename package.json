@@ -10,10 +10,7 @@
     "build": "tsc",
     "start": "ts-node src/index.ts",
     "dev": "ts-node-dev --respawn src/index.ts",
-    "info": "ts-node src/index.ts info",
-    "discover": "ts-node src/index.ts discover",
-    "scan": "ts-node src/index.ts scan",
-    "full": "ts-node src/index.ts full"
+    "info": "ts-node src/index.ts info"
   },
   "keywords": ["network", "security", "reconnaissance"],
   "author": "",

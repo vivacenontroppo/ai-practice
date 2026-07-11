@@ -60,7 +60,7 @@ export async function discoverHosts(
       })
     );
     
-    discovered.push(...results.filter((r): r is DiscoveredHost => r !== null));
+    discovered.push(...results.filter(r => r !== null) as DiscoveredHost[]);
   }
 
   return discovered;
