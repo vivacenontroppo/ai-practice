@@ -1,8 +1,8 @@
 # AI Practice
 
-This project is a small practice space for comparing different AI coding tools and learning how they behave on real automation tasks.
+This project is a small practice space for comparing different AI coding tools and learning how they behave on real tasks.
 
-The goal is to keep experiments simple enough to follow, but structured enough to notice what each tool does well: clean test design, reusable locators, shared config, readable specs, and useful feedback loops.
+The goal is to keep experiments simple enough to follow, but structured enough to notice what each tool does well.
 
 ## Branch Notes
 
@@ -25,3 +25,7 @@ And it works remarkably well.
 </video>
 
 [Qwen2.5 autocomplete demo](qwen2.5%20autocomplite.mov)
+
+### `qwen3.7-agent`
+Agentic coding experiment using Qwen3.7 as the driving model. The agent was tasked with building `netlab`, a small CLI for network reconnaissance and security lab work — a `commander`-based command-line tool (with an `info` command so far) written in TypeScript, using `chalk` for output formatting.
+It did ok — this task was intentionally harder, since macOS system restrictions don't even allow easy listing of nearby SSIDs (a limitation known upfront from prior experience). The agent tried to work around this by writing a native Swift helper.
