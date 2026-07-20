@@ -12,7 +12,11 @@
     "dev": "ts-node-dev --respawn src/index.ts",
     "info": "ts-node src/index.ts info"
   },
-  "keywords": ["network", "security", "reconnaissance"],
+  "keywords": [
+    "network",
+    "security",
+    "reconnaissance"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
@@ -21,7 +25,7 @@
     "commander": "^12.1.0"
   },
   "devDependencies": {
-    "@types/node": "^22.14.1",
+    "@types/node": "^22.20.1",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.3"
