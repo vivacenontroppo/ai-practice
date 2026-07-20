@@ -29,3 +29,9 @@ And it works remarkably well.
 ### `qwen3.7-agent`
 Agentic coding experiment using Qwen3.7 as the driving model. The agent was tasked with building `netlab`, a small CLI for network reconnaissance and security lab work — a `commander`-based command-line tool (with an `info` command so far) written in TypeScript, using `chalk` for output formatting.
 It did ok — this task was intentionally harder, since macOS system restrictions don't even allow easy listing of nearby SSIDs (a limitation known upfront from prior experience). The agent tried to work around this by writing a native Swift helper.
+
+### `qwen-3b-copilot`
+
+This branch explored using Qwen Coder 3B for autocomplete-style coding and used an assistant model to fix TypeScript typing issues in the project. It also added a few reusable agent skills for debugging, testing, and refactoring, and helped verify that the repo could build and run more reliably.
+
+And it works remarkably well.
